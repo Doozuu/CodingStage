@@ -1,0 +1,166 @@
+/* 폰트 연결 */
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1:100,400,700');
+
+/* 전체 폰트, 배경 설정 */
+body {
+  font-family: 'Gothic A1';
+  background-color: #efe7e3; /* 전체 배경색 */
+}
+
+/* frame */
+.frame {
+  margin: 30px 150px; /* 위아래 30px, 양옆 150px margin */
+  display: flex;
+  flex-direction: column; /* 아래쪽으로 쌓이는 모양 */
+}
+
+/* nav */
+.navigator {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky; /* 메뉴바 상단에 고정 */
+  top: 0;
+  background-color: #efe7e3;
+  opacity: 0.8;
+}
+
+li {
+  display: inline; /* 한 줄로 늘어자게 */
+  margin-left: 10px; /* work 랑 info 글자사이 띄워두기 */
+}
+
+.site_name {
+  font-size: 30px;
+  color: #a19187;
+}
+
+ul {
+  padding: 20px; /* 메뉴바 뜨는 부분 조정 */
+}
+
+a {
+  text-decoration: none; /* 하이퍼링크 라인 없애기 */
+  color: black;
+  font-size: 20px;
+}
+
+a:hover {
+  color: white;
+  transition: 0.3s; /* 마우스 올렸을때 하얀색으로 바뀌는데 속도감 느리게 조절*/
+}
+
+/* 한 줄 소개 */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 400px;
+}
+
+.intro {
+  font-size: 50px;
+}
+
+.highlight {
+  display: inline-block;
+  position: relative;
+}
+
+.highlight:after {
+  content: '';
+  width: 0;
+  height: 50px;
+  display: inline-block;
+  background: #5b4ce1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.2s all;
+  opacity: 0.6; /* 투명도 조절 */
+}
+
+.highlight:hover:after {
+  width: 100%; /* 마우스 올리면 하이라이트 효과 */
+}
+
+.english_comment {
+  font-size: 17px;
+  font-style: italic;
+  text-align: left;
+  line-height: 1.5;
+}
+
+/* 자기소개 */
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+p {
+  font-size: 22px;
+  text-align: center;
+  line-height: 2;
+}
+
+video {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#front {
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+/* 스킬 */
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.skill_list > img {
+  margin-left: 12%;
+}
+
+#skill_img {
+  width: 10%;
+  margin-top: 80px;
+}
+
+/* 이미지 확대 애니메이션 */
+#skill_img:hover {
+  transform: scale(1.8, 1.8);
+  transition: all 1.5s ease;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.contact {
+  font-size: 45px;
+  border-bottom: 2px solid black;
+}
+
+.address > a {
+  font-size: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
