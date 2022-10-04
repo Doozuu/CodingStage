@@ -1,0 +1,46 @@
+/* 폰트 적용 */
+body {
+  font-family: 'Jua';
+}
+
+/* 박스 모델 */
+.box {
+  display: flex;
+  margin: 36px;
+  padding: 50px;
+  height: 400px;
+  width: 600px;
+  border-radius: 20px;
+  background-color: #3940a3;
+  box-shadow: 16px 16px 10px rgb(132, 132, 132);
+}
+
+/* 프로필 사진 */
+#profile {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+/* 폰트 색상, 사이즈 설정*/
+li {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* 그린 색상 적용 */
+.green_color {
+  color: green;
+}
+
+/* 줄간격 설정 */
+.favorites {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+/* 핵심 단어 강조 */
+strong {
+  color: pink;
+}
