@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;900&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 20%; /* gap 대신에 적용 */
+  margin-top: 10%;
+  /* gap: 10%;  Safari 최신버전 아니면 flex gap 적용안됨. */
+}
+
+p {
+  font-size: 30px;
+  text-align: center;
+}
+
+.week_section {
+  font-size: 50px;
+  font-weight: 900;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* gap 대신에 적용 */
+  margin-bottom: 10%; /* gap 대신에 적용 */
+}
+
+.week_section > div {
+  cursor: pointer; /* 클릭하는 부분이라는 것을 강조하기 위해 */
+}
+
+.weather_section {
+  font-size: 50px;
+  font-weight: 900;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10%; /* gap 대신에 적용 */
+}
+
+.weather_section > div {
+  cursor: pointer;
+}
+
+.sunny {
+  background-color: skyblue;
+}
+
+.cloud {
+  background-color: lightgray;
+}
+
+.rain {
+  background-color: gray;
+}
+
+.text {
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+}
