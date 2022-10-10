@@ -20,50 +20,27 @@ function dayWeather() {
 // 요일별 이벤트 리스너
 const week = document.querySelectorAll('.week') // 월~금 배열, 반드시 querySelectorAll로!
 
-week[0].addEventListener('click', handleMonClick)
-week[1].addEventListener('click', handleTueClick)
-week[2].addEventListener('click', handleWedClick)
-week[3].addEventListener('click', handleThuClick)
-week[4].addEventListener('click', handleFriClick)
-
-function handleMonClick() {
-  day = week[0].innerText
-  dayWeather()
+function handleDayClick() {
+  for(let j=0; j<week.length; j++){
+    week[j].addEventListener('click', () => {
+      day = week[j].innerText;
+      dayWeather();
+    })
+  }
 }
 
-function handleTueClick() {
-  day = week[1].innerText
-  dayWeather()
-}
-function handleWedClick() {
-  day = week[2].innerText
-  dayWeather()
-}
-function handleThuClick() {
-  day = week[3].innerText
-  dayWeather()
-}
-function handleFriClick() {
-  day = week[4].innerText
-  dayWeather()
-}
+handleDayClick();
 
 // 날씨별 이벤트 리스너
 const weat = document.querySelectorAll('.weather') // 맑음, 흐림, 비옴 배열
 
-weat[0].addEventListener('click', handleSunnyClick)
-weat[1].addEventListener('click', handleCloudClick)
-weat[2].addEventListener('click', handleRainClick)
+function handleWeatClick(){
+  for(let j=0; j<weat.length; j++){
+    weat[j].addEventListener('click', ()=>{
+      weather = weat[j].innerText;
+      dayWeather();
+    })
+  }
+}
 
-function handleSunnyClick() {
-  weather = weat[0].innerText
-  dayWeather()
-}
-function handleCloudClick() {
-  weather = weat[1].innerText
-  dayWeather()
-}
-function handleRainClick() {
-  weather = weat[2].innerText
-  dayWeather()
-}
+handleWeatClick();
