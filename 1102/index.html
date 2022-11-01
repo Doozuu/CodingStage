@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<img src="./img/spark.png" alt="spark" id="spark">
+<img src="./img/spark1.png" alt="spark2" id="spark2">
+<span>
+<h4>today's date <br> todo <br> end date <br> today's weather</h4>
+</span>
+
+<!--로그인-->  
+<h1 class="welcome">Welcome!</h1>
+<form class="hidden" id="login-form">
+  <input
+    required
+    maxlength="15"
+    type="text"
+    placeholder="What is your name?"
+  />
+  <input type="submit" value="Enter" />
+</form>
+<h1 class="hidden" id="greeting"></h1>
+
+  <!-- 날짜 -->
+  <h1>Today's Date</h1>
+  <h2 id="clock"></h2>
+
+ <!--일정-->  
+ <h1>Todo</h1>
+   <div id="todo">
+     <form id="todo-form">
+       <input type="text" placeholder="Write a To Do and Press Enter" required />
+     </form>
+     <ul id="todo-list"></ul>
+   </div>
+
+ <!--D-day 계산--> 
+ <h1 id="end">End date</h1>
+ <form class="hidden" id="dDay-form">
+   <input required type="date"/>
+   <input type="submit" value="Enter"/>
+ </form>
+   <h2 class="hidden" id="d-day"></h2>
+
+<!--날씨-->
+<h1 id="weat">Today's weather</h1>
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+    <script src="js/clock.js"></script>
+    <script src="js/d-day.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather-bg.js"></script>
+</body>
+</html>
