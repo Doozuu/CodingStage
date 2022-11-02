@@ -15,6 +15,7 @@ function calDday(input) {
   const masTime = Date.parse(input);
   const todayTime = new Date();
   const remainTime = masTime - todayTime;
+  const TODOS_KEY = "todos";
 
   if(remainTime<=0 && localStorage.getItem(TODOS_KEY) === null){
     location.href="./celebrate.html";
